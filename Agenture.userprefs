@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{34CD1270-3CCC-4AB2-A5D0-134147520A81}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Agenture/Menu/MenuViewController.cs">
+    <Files>
+      <File FileName="Agenture/Menu/MenuViewController.cs" Line="38" Column="9" />
+      <File FileName="Agenture/Controllers/ContactListViewController.cs" Line="48" Column="57" />
+      <File FileName="Agenture/Main.storyboard" />
+      <File FileName="Agenture/Menu/MenuRootViewController.cs" Line="16" Column="43" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Agenture PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.BA6DED35-A8AF-429F-AC96-2619BB8EA45E">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.Agenture>
+</Properties>

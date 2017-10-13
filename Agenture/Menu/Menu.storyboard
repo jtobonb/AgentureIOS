@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="t7s-Pc-3nA">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Menu Root View Controller-->
+        <scene sceneID="j5x-bU-XtF">
+            <objects>
+                <viewController restorationIdentifier="MenuRootViewController" storyboardIdentifier="MenuRootViewController" id="t7s-Pc-3nA" customClass="MenuRootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mOc-dK-XaF"/>
+                        <viewControllerLayoutGuide type="bottom" id="4HU-WH-gD4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vtd-fy-0uI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bkp-aA-lRi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-950" y="-456"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="JOO-XJ-hX6">
+            <objects>
+                <viewController restorationIdentifier="MenuViewController" storyboardIdentifier="MenuViewController" id="18S-MG-fVk" customClass="MenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sjz-DQ-2rf"/>
+                        <viewControllerLayoutGuide type="bottom" id="2ZA-wP-ZPQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vvg-tE-ewk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1J-el-BIh">
+                                <rect key="frame" x="69" y="111" width="329" height="35"/>
+                                <accessibility key="accessibilityConfiguration" identifier="btnQueries"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="21"/>
+                                <state key="normal" title="Listado">
+                                    <color key="titleColor" red="0.0" green="0.26666666666666666" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnQueriesPressed:" destination="18S-MG-fVk" eventType="touchUpInside" id="262"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icon_menu_query" translatesAutoresizingMaskIntoConstraints="NO" id="a5T-I6-HW0">
+                                <rect key="frame" x="27" y="113.5" width="29" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="a5T-I6-HW0" secondAttribute="height" multiplier="1:1" id="Q6G-dg-tBx"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_menu_signOut" translatesAutoresizingMaskIntoConstraints="NO" id="Gdb-VA-Yis">
+                                <rect key="frame" x="27" y="564" width="29" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Gdb-VA-Yis" secondAttribute="height" multiplier="25:27" id="O3B-AE-IAl"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvy-gJ-uO4">
+                                <rect key="frame" x="69" y="562" width="114" height="35"/>
+                                <accessibility key="accessibilityConfiguration" identifier="btnLogout"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="19"/>
+                                <state key="normal" title="Cerrar sesión">
+                                    <color key="titleColor" red="0.0" green="0.26666666666666666" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="CloseSesionPressed:" destination="18S-MG-fVk" eventType="touchUpInside" id="23"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2p3-FT-HAD">
+                                <rect key="frame" x="371" y="36" width="23" height="23"/>
+                                <accessibility key="accessibilityConfiguration" identifier="btnCloseMenu"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2p3-FT-HAD" secondAttribute="height" multiplier="1:1" id="aZP-UY-Yac"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="icon_close"/>
+                                <connections>
+                                    <action selector="btnClosePressed:" destination="18S-MG-fVk" eventType="touchUpInside" id="22"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="S1J-el-BIh" secondAttribute="trailing" constant="16" id="4i6-sJ-o6x"/>
+                            <constraint firstItem="Gdb-VA-Yis" firstAttribute="width" secondItem="Vvg-tE-ewk" secondAttribute="width" multiplier="0.07" id="Dw1-nX-4MY"/>
+                            <constraint firstItem="S1J-el-BIh" firstAttribute="centerY" secondItem="a5T-I6-HW0" secondAttribute="centerY" id="GQS-nE-D6w"/>
+                            <constraint firstItem="Gdb-VA-Yis" firstAttribute="leading" secondItem="a5T-I6-HW0" secondAttribute="leading" id="Gbe-Y7-H6k"/>
+                            <constraint firstItem="Zvy-gJ-uO4" firstAttribute="centerY" secondItem="Gdb-VA-Yis" secondAttribute="centerY" id="TLT-OP-PZH"/>
+                            <constraint firstItem="a5T-I6-HW0" firstAttribute="width" secondItem="Vvg-tE-ewk" secondAttribute="width" multiplier="0.07" id="VFO-yP-U0I"/>
+                            <constraint firstItem="a5T-I6-HW0" firstAttribute="leading" secondItem="Vvg-tE-ewk" secondAttribute="leadingMargin" constant="7" id="ae7-zh-K7k"/>
+                            <constraint firstItem="Zvy-gJ-uO4" firstAttribute="leading" secondItem="Gdb-VA-Yis" secondAttribute="trailing" constant="13" id="ed6-xQ-tRG"/>
+                            <constraint firstItem="2ZA-wP-ZPQ" firstAttribute="top" secondItem="Zvy-gJ-uO4" secondAttribute="bottom" constant="139" id="f1r-1w-les"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2p3-FT-HAD" secondAttribute="trailing" id="g8K-hr-3Ws"/>
+                            <constraint firstItem="2p3-FT-HAD" firstAttribute="top" secondItem="Sjz-DQ-2rf" secondAttribute="bottom" constant="16" id="iFy-HD-Okw"/>
+                            <constraint firstItem="S1J-el-BIh" firstAttribute="top" secondItem="2p3-FT-HAD" secondAttribute="bottom" constant="52" id="oTm-F1-3UF"/>
+                            <constraint firstItem="S1J-el-BIh" firstAttribute="height" secondItem="a5T-I6-HW0" secondAttribute="height" multiplier="1.2" id="tdp-Rk-wgI"/>
+                            <constraint firstItem="S1J-el-BIh" firstAttribute="leading" secondItem="a5T-I6-HW0" secondAttribute="trailing" constant="13" id="xcj-ZO-RFv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnCloseMenu" destination="2p3-FT-HAD" id="name-outlet-2p3-FT-HAD"/>
+                        <outlet property="btnLogout" destination="Zvy-gJ-uO4" id="name-outlet-Zvy-gJ-uO4"/>
+                        <outlet property="btnQueries" destination="S1J-el-BIh" id="name-outlet-S1J-el-BIh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYv-9N-ica" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-955.07240000000002" y="223.36959999999999"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_close" width="16" height="16"/>
+        <image name="icon_menu_query" width="16" height="16"/>
+        <image name="icon_menu_signOut" width="16" height="16"/>
+    </resources>
+</document>
